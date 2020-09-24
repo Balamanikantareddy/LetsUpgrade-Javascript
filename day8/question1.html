@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MY SHOPPING</title>
+       
+       
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+
+    <body >
+        <div class="container-fluid nav_bg mb-4">
+            <div class="rows">
+                <div class='col-12 mx-auto'>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                        <h2 class="navbar-brand"> MY SHOPPING </h2>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="form-group ml-auto col-md-10"
+                            id="myform">
+                            <div class="row">
+                                <div class="form-group col-md-2">
+                                    <label for="min">Minimum Price</label>     
+                                    <input name="min" id="min" placeholder="min price"> 
+                                </div>
+								 <br />
+                                <div class="form-group col-md-2">
+                                    <label for="max">Maximum Price</label>     
+                                    <input name="max" id="max" placeholder="max price"> 
+                                </div>
+                                <div class="form-group col-md-2">
+                                  
+                                    <button class="btn btn-outline-primary" onclick="filterpro(event)"> reduse results </button>
+                                </div>
+								<br />
+                                <div class="form-group col-md-3">
+                                    <label for="searchpro">Search Product</label>     
+                                    <input name="searchpro" id="searchpro" onkeyup="searchprod(this.value)" placeholder="search"> 
+                                </div>
+                                <div class=" col-md-2">
+                                    <br />
+                                    <a  id="cartimg" class="btn btn-outline-light"> </a>  
+                                </div>   
+								  <br />
+								    <br />
+									<br />
+									<br />
+								<h1>AVAILABLE PRODUCTS</h1>	
+								<br />
+                        </form>  
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class='col-12 mx-auto'> 
+                    <div class="row" id="bCard">
+					
+                    </div>
+                </div>
+            </div>  
+        </div>  
+		<h1>CARTED PRODUCTS</h1>
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class='col-12 mx-auto'> 
+                    <div class="row" id="cart">
+                                      
+                    </div>
+                </div>
+            </div>  
+        </div> 
+		
+        <script src="question1.js"></script>
+    </body>
+</html>
